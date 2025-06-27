@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Solver AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 Math Solver</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <p>Or type math expression:</p>
+    <input type="text" id="mathInput" placeholder="e.g., 2x + 3 = 7 or 5 * (2 + 3)">
+    <button onclick="solve()">Solve</button>
+    <p id="output"></p>
+    <canvas id="previewCanvas"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.1/dist/tesseract.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.js"></script>
+  <script src="script.js"></script>
+  <div class="copyright">
+    <p>© 2025 Swadhin. All rights reserved.</p>
+  </div>
+</body>
+</html>
+
